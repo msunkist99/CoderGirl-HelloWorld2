@@ -21,10 +21,9 @@ namespace Test
                     Program.Main();
                 }
 
-                var result = sw.ToString().Replace("Please enter your name: ", "").Replace(Environment.NewLine, "");
+                var result = sw.ToString().Replace(Environment.NewLine, "");
 
-                Assert.StartsWith("Hello ", result);
-                Assert.EndsWith("!", result);
+                Assert.EndsWith("Scott!", result);
                 Assert.True(result.Length > "Hello !".Length);
             }
         }
