@@ -2,11 +2,17 @@
 
 namespace HelloWorld2
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Please enter your name: ");
+
+            // Store a name the user enters to a variable.
+
+            // Output - Hello (name)!
+
+            Console.ReadLine();
         }
     }
 }
